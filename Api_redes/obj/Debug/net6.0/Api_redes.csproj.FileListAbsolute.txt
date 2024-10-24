@@ -41,3 +41,4 @@ C:\Users\campo\OneDrive\Escritorio\Apiredesnetcore\Api_redes\Api_redes\obj\Debug
 C:\Users\campo\OneDrive\Escritorio\Apiredesnetcore\Api_redes\Api_redes\obj\Debug\net6.0\Api_redes.pdb
 C:\Users\campo\OneDrive\Escritorio\Apiredesnetcore\Api_redes\Api_redes\obj\Debug\net6.0\Api_redes.genruntimeconfig.cache
 C:\Users\campo\OneDrive\Escritorio\Apiredesnetcore\Api_redes\Api_redes\obj\Debug\net6.0\ref\Api_redes.dll
+C:\Users\campo\OneDrive\Escritorio\Apiredesnetcore\Api_redes\Api_redes\obj\Debug\net6.0\Api_redes.sourcelink.json

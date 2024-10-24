@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Api_redes")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+97e68b0bcb622465a7b6774122db3bdd695be91b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Api_redes")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Api_redes")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

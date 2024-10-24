@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 using Api_redes.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Components.Routing;
 
 
 
@@ -22,12 +23,12 @@ namespace Api_redes.Controllers
         [HttpGet]
         [Route("")]
 
-        public IActionResult Lista() { 
+        public IActionResult GetAllUser() {
             List<User> users = new List<User>();
 
             try
             {
-                 users = _tuDbContext.Users.ToList();
+                users = _tuDbContext.Users.ToList();
 
                 if (users == null || !users.Any())
                 {
@@ -57,7 +58,7 @@ namespace Api_redes.Controllers
 
             try
             {
-               return StatusCode(StatusCodes.Status200OK, new { mensaje = "ok", response = oUsers });
+                return StatusCode(StatusCodes.Status200OK, new { mensaje = "ok", response = oUsers });
             }
             catch (Exception ex)
             {
@@ -72,19 +73,77 @@ namespace Api_redes.Controllers
 
         public IActionResult AddUser([FromBody] User oUser) {
 
-                       
+
+
             try
             {
                 _tuDbContext.Users.Add(oUser);
                 _tuDbContext.SaveChanges();
 
-                return StatusCode(StatusCodes.Status200OK, new { mensaje = "ok"});
+                return StatusCode(StatusCodes.Status200OK, new { mensaje = "ok" });
             }
             catch (Exception ex)
             {
 
-                return StatusCode(StatusCodes.Status200OK, new { mensaje = "ok"});
+                return StatusCode(StatusCodes.Status200OK, new { mensaje = "Ocurrió un error", detalle = ex.Message });
 
+            }
+        }
+
+        [HttpPut]
+
+        [Route("")]
+
+        public IActionResult UpdateUser([FromBody] User ouser)
+        {
+            User oUsers = _tuDbContext.Users.Find(ouser.Id);
+
+            if (oUsers == null)
+            {
+                return BadRequest("User not found");
+            }
+
+            try
+            {
+                oUsers.Nombre = ouser.Nombre is null ? oUsers.Nombre : ouser.Nombre;
+                oUsers.Contraseña = ouser.Contraseña is null ? oUsers.Contraseña : ouser.Contraseña;
+
+                _tuDbContext.Users.Update(ouser);
+                _tuDbContext.SaveChanges();
+
+                return StatusCode(StatusCodes.Status200OK, new { mensaje = "ok" });
+            }
+            catch (Exception ex)
+            {
+
+                return StatusCode(StatusCodes.Status200OK, new { mensaje = "Ocurrió un error", detalle = ex.Message });
+
+            }
+        }
+
+
+        [HttpDelete]
+        [Route("{id:int}")]
+
+        public IActionResult DeleteUsersByID(int id)
+        {
+            User oUsers = _tuDbContext.Users.Find(id);
+
+            if (oUsers == null)
+            {
+                return BadRequest("User not found");
+            }
+
+            try
+            {
+                _tuDbContext.Users.Remove(oUsers);
+                _tuDbContext.SaveChanges();
+                return StatusCode(StatusCodes.Status200OK, new { mensaje = "ok" });
+            }
+            catch (Exception ex)
+            {
+                // Registro del error si es necesario (log)
+                return StatusCode(StatusCodes.Status500InternalServerError, new { mensaje = "Ocurrió un error", detalle = ex.Message });
             }
         }
 
