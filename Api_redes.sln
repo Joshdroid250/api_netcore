@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api_redes", "Api_redes\Api_redes.csproj", "{C7835188-B3B5-49FE-92F2-D03BCDF28B7F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C7835188-B3B5-49FE-92F2-D03BCDF28B7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7835188-B3B5-49FE-92F2-D03BCDF28B7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7835188-B3B5-49FE-92F2-D03BCDF28B7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7835188-B3B5-49FE-92F2-D03BCDF28B7F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {349347ED-A96E-4A65-9A71-8E8146773AA3}
+	EndGlobalSection
+EndGlobal
