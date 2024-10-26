@@ -15,7 +15,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<TuDbContext>(opt =>
 {
     var connectionString = builder.Configuration.GetConnectionString("CadenaSQL");
-    var serverVersion = new MySqlServerVersion(new Version(8, 0, 22)); // Cambia a la versión de tu servidor MySQL
+    var serverVersion = new MySqlServerVersion(new Version(8, 0, 22)); // Cambia a la versiÃ³n de tu servidor MySQL
     opt.UseMySql(connectionString, serverVersion);
 });
 
@@ -24,11 +24,14 @@ var app = builder.Build();
 
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
+//if (app.Environment.IsDevelopment())
+//{
+//    app.UseSwagger();
+//    app.UseSwaggerUI();
+//}
+
+ app.UseSwagger();
     app.UseSwaggerUI();
-}
 
 app.UseAuthorization();
 
