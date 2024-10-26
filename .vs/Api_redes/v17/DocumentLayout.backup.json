@@ -39,15 +39,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Api_redes",
+              "Title": "Api_redes.csproj",
               "DocumentMoniker": "C:\\Users\\campo\\OneDrive\\Escritorio\\Apiredesnetcore\\Api_redes\\Api_redes\\Api_redes.csproj",
               "RelativeDocumentMoniker": "Api_redes\\Api_redes.csproj",
               "ToolTip": "C:\\Users\\campo\\OneDrive\\Escritorio\\Apiredesnetcore\\Api_redes\\Api_redes\\Api_redes.csproj",
               "RelativeToolTip": "Api_redes\\Api_redes.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-25T04:35:21.739Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-25T04:35:21.739Z"
             },
             {
               "$type": "Document",
@@ -59,8 +58,7 @@
               "RelativeToolTip": "Api_redes\\Models\\TuDbContext.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T00:58:04.855Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T00:58:04.855Z"
             },
             {
               "$type": "Document",
@@ -70,7 +68,7 @@
               "RelativeDocumentMoniker": "Api_redes\\appsettings.json",
               "ToolTip": "C:\\Users\\campo\\OneDrive\\Escritorio\\Apiredesnetcore\\Api_redes\\Api_redes\\appsettings.json",
               "RelativeToolTip": "Api_redes\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-10-24T01:00:40.645Z",
               "EditorCaption": ""
@@ -85,8 +83,7 @@
               "RelativeToolTip": "Api_redes\\Controllers\\UsuarioController.cs",
               "ViewState": "AgIAAE0AAAAAAAAAAAAIwFsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T01:08:21.373Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T01:08:21.373Z"
             },
             {
               "$type": "Document",
@@ -110,8 +107,7 @@
               "RelativeToolTip": "Api_redes\\Models\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T00:59:25.455Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T00:59:25.455Z"
             }
           ]
         }
